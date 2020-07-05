@@ -203,3 +203,7 @@ font-size: 150%;
 .footer{
   margin: 10%;
 }
+#mobile1{
+  position: relative;
+  margin-left: 10%;
+}
