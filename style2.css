@@ -1,0 +1,205 @@
+body{
+  margin: 0px;
+
+    background-color: #e6e6ff;
+
+
+}
+#head{
+  text-align: center;
+  background-color: black;
+  border-width: 10px;
+  border-color: black;
+  color: white;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#span1{
+  background-color: red;
+  width: 30%;
+  margin-left: 35%;
+  border-radius: 10px;
+
+}
+#span2{
+  background-color: red;
+  width: 30%;
+  margin-left: 35%;
+  border-radius: 10px;
+}
+#nav-bar{
+  text-align: center;
+  background-color: blue;
+  color: black;
+  margin-right: 80%;
+  margin-left: 10%;
+  padding-left: 0%;
+}
+ul{
+  padding-left: 0%;
+}
+#nav-bar-2{
+  background-color: orange;
+
+}
+
+.nav-span{
+  padding-left: 3%;
+  font-family:serif;
+  font-size:  100%;
+  transition: font-size 0.5s;
+  transition-timing-function: ease;
+}
+.nav-span:hover{
+font-size: 150%;
+}
+#box{
+  position:relative;
+}
+#name{
+  font-size: 200%;
+  text-align: center;
+  color:white;
+  opacity: 0%;
+  animation-name: name;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+.name-transition{
+  width: 10px;
+  height: 10px;
+  background: #e6e6ff;
+  border-radius: 20%;
+  position: absolute;
+  animation-name: left;
+  animation-duration: 4s;
+
+}
+@keyframes left {
+  0%{
+    background-color: #e6e6ff;
+    left: 0px;
+
+  }
+  50%{
+    background-color: blue;
+    left: 50%;
+
+  }
+  100%{
+    background-color:#e6e6ff;
+    left:100%;
+
+  }
+}
+@keyframes name {
+  0%{
+    opacity:0%;
+  }
+  100%{
+    opacity:100%;
+    color: black;
+  }
+}
+#my-name{
+  text-align: center;
+}
+#image1 {
+  box-shadow: 3px 3px 5px black;
+  animation-name: shadow-display;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+@keyframes shadow-display{
+  box-shadow: 3px 3px 5px black;
+}
+#div3{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+@media only screen and (max-width: 600px) {
+  #desktop{
+    opacity:0%;
+  }
+  #mobile{
+    opacity:100%;
+
+  }
+}
+@media only screen and (min-width: 600px) {
+  #desktop{
+    opacity:100%;
+
+  }
+  #mobile{
+    opacity:0%;
+
+  }
+}
+#Hobbies-header{
+
+  transition: font-size 0.5s;
+  transition-timing-function: ease;
+}
+.Hobbies{
+  width: 25%;
+  border-width: 2px;
+  box-shadow: 3px 3px 5px black,5px 5px 10px grey;
+  border-radius: 4px;
+
+  border-color: blue;
+  border-style: solid;
+
+  font-size:75%;
+  transition: font-size 0.2s;
+  transition-timing-function: ease;
+}
+#Hobbies-header:hover{
+  font-size:200%;
+}
+.Hobbies:hover{
+  font-size: 120%;
+}
+.maggie{
+
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  font-size:75%;
+  transition: font-size 0.2s;
+  transition-timing-function: ease;
+}
+.maggie:hover{
+  font-size:120%;
+}
+
+.grid-container {
+  display: grid;
+
+  grid-template-columns: auto auto;
+  padding-left: 10%;
+
+}
+#Hobbies{
+  grid-area: left;
+}
+#maggie{
+  grid-area: right;
+}
+#div4{
+  background-color: black;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  display: grid;
+
+  grid-template-columns: auto auto auto;
+  padding-left: 10%;
+}
+.footer{
+  margin: 10%;
+}
